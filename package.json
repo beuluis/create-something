@@ -14,6 +14,9 @@
     "build": "tsc --build",
     "test-cli": "rm -Rf test-out && ts-node src/cli.ts test-out"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/beuluis/create-something.git"
