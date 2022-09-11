@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/package.json",
   "name": "{{ name }}",
   "version": "1.0.0",
   "description": "{{ description }}",
@@ -14,6 +15,6 @@
   },
   "license": "{{ license }}",
   "dependencies": {
-    "@beuluis/create-helper": "^1.0.4"
+    "@beuluis/create-helper": "^1.0.6"
   }
 }
