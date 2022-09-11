@@ -1,0 +1,39 @@
+{
+  "name": "@beuluis/create-something",
+  "version": "1.0.0",
+  "description": "Initializer for other initializers",
+  "main": "dist/cli.js",
+  "bin": "dist/cli.js",
+  "types": "dist/cli.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "prepack": "npm run build",
+    "build": "tsc --build",
+    "test-cli": "rm -Rf test-out && ts-node src/cli.ts test-out"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beuluis/create-something.git"
+  },
+  "author": "Luis Beu <me@luisbeu.de> (https://luisbeu.de/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/beuluis/create-something/issues"
+  },
+  "homepage": "https://github.com/beuluis/create-something#readme",
+  "dependencies": {
+    "@beuluis/create-helper": "^1.0.5",
+    "package-name-regex": "^2.0.6"
+  },
+  "devDependencies": {
+    "@beuluis/prettier-config": "^1.0.2",
+    "@types/node": "^18.7.16",
+    "@types/package-name-regex": "^2.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.3"
+  },
+  "prettier": "@beuluis/prettier-config"
+}
