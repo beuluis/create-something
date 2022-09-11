@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { create } from '@beuluis/create-helper';
 import { resolve } from 'path';
 import packageNameRegex from 'package-name-regex';

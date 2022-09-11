@@ -4,9 +4,9 @@
   "description": "{{ description }}",
   "main": "src/cli.js",
   "bin": "src/cli.js",
-  "module": "src/cli.js",
   "files": [
-    "src"
+    "src",
+    "templates"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",

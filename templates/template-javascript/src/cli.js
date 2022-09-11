@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const { create } = require('@beuluis/create-helper');
 const { resolve } = require('path');
 
