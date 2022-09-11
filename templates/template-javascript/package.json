@@ -4,6 +4,7 @@
   "description": "{{ description }}",
   "main": "src/cli.js",
   "bin": "src/cli.js",
+  "module": "src/cli.js",
   "files": [
     "src"
   ],

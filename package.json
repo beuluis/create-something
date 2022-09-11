@@ -4,6 +4,7 @@
   "description": "Initializer for other initializers",
   "main": "dist/cli.js",
   "bin": "dist/cli.js",
+  "module": "dist/cli.js",
   "types": "dist/cli.d.ts",
   "files": [
     "dist"
