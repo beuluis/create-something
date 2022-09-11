@@ -1,1 +1,1 @@
-{% render '.gitignore' %}
+{% render 'gitignore' %}
