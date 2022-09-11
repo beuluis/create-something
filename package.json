@@ -1,6 +1,6 @@
 {
   "name": "@beuluis/create-something",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Initializer for other initializers",
   "main": "dist/cli.js",
   "bin": "dist/cli.js",
