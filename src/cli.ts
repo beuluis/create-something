@@ -5,13 +5,12 @@ import { resolve } from 'path';
 import packageNameRegex from 'package-name-regex';
 
 create({
-    questionsSelectors: ['name', 'description', 'license'],
     templatesDirectory: resolve(__dirname, '..', 'templates'),
     partials: resolve(__dirname, '..', 'templates', 'partials'),
     defaultTemplate: 'typescript',
     templatesPrefix: 'template-',
-    setupInteractiveUI: engine => {
-        engine.registerQuestion({
+    setupInteractiveUI: (engine, buildInQuestions) => {
+        engine.registerQuestions([{
             type: 'input',
             message:
                 'What is the name of your project? (needs to start with create- or @scope/create- and be a valid npm package name)',
@@ -26,7 +25,10 @@ create({
                 return true;
             },
             name: 'name',
-        }, true);
+        },
+        buildInQuestions.description,
+        buildInQuestions.license
+    ]);
     },
     afterCreationHook: async ({ getAfterHookHelper }) => {
         const helper = getAfterHookHelper();

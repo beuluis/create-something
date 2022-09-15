@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/beuluis/create-something#readme",
   "dependencies": {
-    "@beuluis/create-helper": "^1.0.6",
+    "@beuluis/create-helper": "^1.1.1",
     "package-name-regex": "^2.0.6"
   },
   "devDependencies": {
