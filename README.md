@@ -36,9 +36,9 @@ npx @beuluis/create-something <create_path>
 
 ## Templates
 
-- `typescript` - Default template
+-   `typescript` - Default template
 
-- `javascript`
+-   `javascript`
 
 ## Use different template
 

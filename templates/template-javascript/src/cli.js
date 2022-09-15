@@ -1,7 +1,5 @@
-#!/usr/bin/env node
-
-const { create } = require('@beuluis/create-helper');
 const { resolve } = require('path');
+const { create } = require('@beuluis/create-helper');
 
 create({
     templatesDirectory: resolve(__dirname, '..', 'templates'),
@@ -11,8 +9,8 @@ create({
         engine.registerQuestions([
             buildInQuestions.name,
             buildInQuestions.description,
-            buildInQuestions.license
-        ])
+            buildInQuestions.license,
+        ]);
     },
     afterCreationHook: async ({ getAfterHookHelper }) => {
         const helper = getAfterHookHelper();

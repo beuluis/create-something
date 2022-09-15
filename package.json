@@ -10,10 +10,13 @@
     "templates"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0",
+    "test": "npm run test-cli -- --name create-test --description test --license MIT",
+    "lint": "eslint .",
+    "format": "prettier . --check",
     "prepack": "npm run build",
     "build": "tsc --build",
-    "test-cli": "rm -Rf test-out && ts-node src/cli.ts test-out"
+    "test-cli": "rm -Rf test-out && ts-node src/cli.ts test-out",
+    "prepare": "husky install"
   },
   "publishConfig": {
     "access": "public"
@@ -33,9 +36,14 @@
     "package-name-regex": "^2.0.6"
   },
   "devDependencies": {
-    "@beuluis/prettier-config": "^1.0.2",
+    "@beuluis/eslint-config": "^1.0.2",
+    "@beuluis/hook-cli": "^1.1.2",
+    "@beuluis/prettier-config": "^2.0.1",
     "@types/node": "^18.7.16",
     "@types/package-name-regex": "^2.0.0",
+    "eslint": "^8.23.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "ts-node": "^10.9.1",
     "typescript": "^4.8.3"
   },
@@ -46,5 +54,14 @@
     "initializer",
     "helper"
   ],
-  "prettier": "@beuluis/prettier-config"
+  "prettier": "@beuluis/prettier-config",
+  "lint-staged": {
+    "*.md": [
+      "prettier --write"
+    ],
+    "*.{js,ts,json,yml,yaml}": [
+      "prettier --write",
+      "eslint"
+    ]
+  }
 }

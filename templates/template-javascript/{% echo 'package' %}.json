@@ -5,10 +5,7 @@
   "description": "{{ description }}",
   "main": "src/cli.js",
   "bin": "src/cli.js",
-  "files": [
-    "src",
-    "templates"
-  ],
+  "files": ["src", "templates"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
     "test-cli": "rm -Rf test-out && node src/cli.js test-out"

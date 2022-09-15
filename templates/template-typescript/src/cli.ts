@@ -11,8 +11,8 @@ create({
         engine.registerQuestions([
             buildInQuestions.name,
             buildInQuestions.description,
-            buildInQuestions.license
-        ])
+            buildInQuestions.license,
+        ]);
     },
     afterCreationHook: async ({ getAfterHookHelper }) => {
         const helper = getAfterHookHelper();

@@ -14,7 +14,7 @@ npx {{ name }} <create_path>
 
 ## Templates
 
-- `standard` - Default template
+-   `standard` - Default template
 
 ## Use different template
 

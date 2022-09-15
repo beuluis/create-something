@@ -1,0 +1,5 @@
+{
+    "rules": {
+        "canonical/filename-match-regex": "off"
+    }
+}

@@ -6,10 +6,7 @@
   "main": "dist/cli.js",
   "bin": "dist/cli.js",
   "types": "dist/cli.d.ts",
-  "files": [
-    "dist",
-    "templates"
-  ],
+  "files": ["dist", "templates"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
     "prepack": "npm run build",
