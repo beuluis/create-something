@@ -24,6 +24,12 @@
         {
             "extends": ["@beuluis/eslint-config/jest"],
             "files": ["*.{spec,test}.ts", "**/{__mocks__,__tests__}/**/*.ts", "**/jest.setup.ts"]
+        },
+        {
+            "files": ["templates/**/*"],
+            "rules": {
+                "canonical/filename-match-regex": "off"
+            }
         }
     ]
 }
