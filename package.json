@@ -42,7 +42,7 @@
     "@types/node": "18.7.18",
     "@types/package-name-regex": "2.0.0",
     "eslint": "8.23.1",
-    "husky": "8.0.1",
+    "husky": "8.0.2",
     "lint-staged": "13.0.3",
     "np": "7.6.2",
     "ts-node": "10.9.1",
