@@ -39,7 +39,7 @@
     "@beuluis/eslint-config": "1.0.2",
     "@beuluis/hook-cli": "1.1.4",
     "@beuluis/prettier-config": "2.0.1",
-    "@types/node": "18.7.18",
+    "@types/node": "18.11.16",
     "@types/package-name-regex": "2.0.0",
     "eslint": "8.23.1",
     "husky": "8.0.1",
